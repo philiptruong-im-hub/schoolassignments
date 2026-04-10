@@ -53,8 +53,7 @@
     function FoxyJumpscare() {
     clearInterval(JUMPSCARE);
 
-    // This line adds a unique number (the current time) to the URL
-    // It turns "...foxy.gif" into "...foxy.gif?t=1712476800"
+    // This hopefully makes it so that the gif will play always from the beginning and never in between or in the middle.
     img.src = Foxy + "?t=" + new Date().getTime();
 
     overlay.style.display = "flex";
